@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>我的外卖</title>
+		<script src="js/jquery.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+                $("#d1").mouseover(function(){
+                    $(this).addClass("yellow");
+                    $("#d2").removeClass("yellow");
+                });
+                $("#d1").mouseout(function(){
+                    $(this).removeClass("yellow");
+                    $("#d2").addClass("yellow");
+                });
+            });
+		</script>
+		<link rel="stylesheet" href="work.css" />
+	    <link rel="stylesheet" href="information.css" />
+	</head>
+	<body>
+		<header>
+			<div class="top_1">
+				<span class="top_1_1">南京邮电大学仙林校区</span>
+			</div>
+			<div class="top_2">
+			    <span><a href="" target="_blank">注册</a></span>
+			    <span>|</span>
+			    <span><a href="" target="_blank">登录</a></span>
+			</div>
+		</header>
+		<div class="guide">
+			<div class="guide_1">
+				<img src="img/logo.jpg" alt="" />
+			</div>
+			<div class="guide_2">
+				<span><a href="home.html">首页</a></span>
+				<span>|</span>
+				<span><a href="">我的外卖</a></span>
+			</div>
+			<div class="guide_3">
+				<form action="">
+					<span class="guide_3_1">
+					    <input class="guide_3_1_1" type="text" name="search" placeholder="搜索商家，美食"/>
+					    <input class="guide_3_1_2" type="button" value="搜索" />
+					</span>
+				</form>
+			</div>
+		</div>
+		<div class="search">
+			<div class="search_1">
+				<div class="search_1_1">
+					订单查询
+				</div>
+				<a href="seller_order.html">
+				    <div id="d1" class="search_1_2">
+					        全部订单
+				    </div>
+				</a>
+				<div class="search_1_3">
+					账号管理
+				</div>
+				<a href="">
+				    <div id="d2" class="search_1_2 yellow">
+			    		我的账号
+			    	</div>
+				</a>
+			</div>
+			<div class="search_2">
+				<form action="">
+					<div class="search_2_1">
+						插入商户信息
+					</div>
+					<span class="search_2_2">
+						添加我的地址
+					</span>
+					<span>
+					    <input type="text" name="sell_address" />
+					</span>
+					<span class="sub">
+						<input  type="submit" value="提交"/>
+					</span>
+					<div class="search_2_1">
+						修改客户信息
+					</div>
+					<div class="search_2_3">
+						<span style="padding:0 35px 0 0px;">
+							修改商户名
+						</span>
+						<span>
+						    <input type="text" name="sell_name" />
+						</span>
+						<span class="sub">
+					    	<input  type="submit" value="提交"/>
+					    </span>
+					</div>
+					<div class="search_2_1">
+						插入商品信息
+					</div>
+					<div class="search_2_3">
+						<span style="padding:0 18px 0 0;">
+							添加的商品
+						</span>
+						<span style="padding:0 18px 0 0;">
+						    <input type="text" name="add_goods" />
+						</span>
+						<span style="padding:0 18px 0 0;">
+							价格
+						</span>
+						<span>
+						    <input type="text" name="goods_price" style="width: 100px;"/>
+						</span>
+						<span class="sub">
+					    	<input  type="submit" value="提交"/>
+				    	</span>
+					</div>
+					<div class="search_2_1">
+						修改商品信息
+					</div>
+					<div class="search_2_3">
+						<span style="padding:0 18px 0 0;">
+							修改的商品
+						</span>
+						<span style="padding:0 18px 0 0;">
+						    <input type="text" name="add_goods" />
+						</span>
+						<span style="padding:0 18px 0 0;">
+							价格
+						</span>
+						<span>
+						    <input type="text" name="goods_price" style="width: 100px;"/>
+						</span>
+						<span class="sub">
+					    	<input  type="submit" value="提交"/>
+				    	</span>
+					</div>
+				</form>
+			</div>
+		</div>
+		
+	</body>
+</html>
