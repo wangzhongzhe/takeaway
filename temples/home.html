@@ -4,14 +4,8 @@
 		<meta charset="utf-8" />
 		<title>外卖网站</title>
 		<script src="js/jquery.js"></script>
-		<script type="text/javascript"> 
-            $(document).ready(function(){
-                $(".flip").click(function(){
-                    $(".panel").slideToggle("slow");
-                });
-            });
-        </script>
-		<link rel="stylesheet" href="work.css" />
+		<script src="js/login.js"></script>
+		<link rel="stylesheet" href="css/work.css" />
 	</head>
 	<body>
 		<header>
@@ -19,9 +13,11 @@
 				<span class="top_1_1">南京邮电大学仙林校区</span>
 			</div>
 			<div class="top_2">
-			    <span><a href="" target="_blank">注册</a></span>
-			    <span>|</span>
-			    <span><a href="" target="_blank">登录</a></span>
+				<a href="login_seller.html">
+			        <span>注册</span>
+			        <span>|</span>
+			        <span>登录</span>
+                </a>
 			</div>
 		</header>
 		<div class="guide">
@@ -29,21 +25,23 @@
 				<img src="img/logo.jpg" alt="" />
 			</div>
 			<div class="guide_2">
-				<span><a href="">首页</a></span>
-				<span>|</span>
-				<span class="flip">我的外卖</span>
-				<div class="panel">
-                    <span><a href="customer_information.html">我是客户</a></span>
-                    <span><a href="seller_information.html">我是商户</a></span>
-                </div>
+				<div class="po">
+					<span><a href="">首页</a></span>
+					<span>|</span>
+					<span class="flip">我的外卖</span>
+					<div class="panel">
+	                    <span><a href="customer_information.html">我是客户</a></span>
+	                    <span><a href="seller_information.html">我是商户</a></span>              
+					</div>
+				</div>
 			</div>
 			<div class="guide_3">
-				<form action="">
-					<span class="guide_3_1">
-					    <input class="guide_3_1_1" type="text" name="search" placeholder="搜索商家，美食"/>
-					    <input class="guide_3_1_2" type="button" value="搜索" />
-					</span>
-				</form>
+				<div class="guide_3_1">
+					<form style="width: 500px; height: 76px;" action="">
+						    <input class="guide_3_1_1" type="text" name="search" placeholder="搜索商家，美食"/>
+						    <input class="guide_3_1_2" type="button" value="搜索" />
+					</form>
+				</div>
 			</div>
 		</div>
 		<div class="classify">
@@ -53,6 +51,7 @@
 					<li><a id="change" href="">全部</a></li>
 					<li><a href="">西餐</a></li>
 					<li><a href="">火锅</a></li>
+					<li><a href="">生活超市</a></li>
 					<li><a href="">甜点饮品</a></li>
 					<li><a href="">日韩料理</a></li>
 					<li><a href="">快餐小吃</a></li>
@@ -65,8 +64,8 @@
 		<div class="restaurant">
 			<div class="line">
 				<div class="move">
-					<a href="">
-				    	<div class="restaurant_1">
+					<a href="shop_one.html">
+				    	<div class="restaurant_1" onmouseover="change_1(this)" onmouseout="change_2(this)">
 				        	<div>
 				        		<img src="img/re1.jpg" alt="" />	
 				         	</div>
@@ -89,21 +88,21 @@
 				    	    </div>
 				     	</div>
 			     	</a>
-			     	<a href="">
-				     	<div class="restaurant_1">
+			     	<a href="shop_two.html">
+				     	<div class="restaurant_1" onmouseover="change_1(this)" onmouseout="change_2(this)">
 				        	<div>
-				        		<img src="img/re1.jpg" alt="" />	
+				        		<img src="img/liaoli.png" alt="" />	
 				         	</div>
 				    	    <div class="restaurant_1_1">
-				    	     	大娘水饺
+				    	     	有家日本料理
 				    	    </div>
 				    	    <div class="restaurant_1_2">
-				    	    	<span>评分：4.9分</span><span class="m">月售756单</span>
+				    	    	<span>评分：4.7分</span><span class="m">月售245单</span>
 				    	    </div>
 				     	    <div class="restaurant_1_3">
-					        	<span>起送:20元</span>
-					        	<span class="o">免费配送</span>
-					        	<span class="m"><img src="img/time.jpg" alt="" /><span class="v">22分钟</span></span>
+					        	<span>起送:30元</span>
+					        	<span class="o">配送费2元</span>
+					        	<span class="m"><img src="img/time.jpg" alt="" /><span class="v">28分钟</span></span>
 					        </div>
 					        <div class="restaurant_1_4">
 					        	<hr />
@@ -113,21 +112,21 @@
 				    	    </div>
 				     	</div>
 			     	</a>
-			     	<a href="">
-				     	<div class="restaurant_1">
+			     	<a href="shop_three.html">
+				     	<div class="restaurant_1" onmouseover="change_1(this)" onmouseout="change_2(this)">
 				        	<div>
-				        		<img src="img/re1.jpg" alt="" />	
+				        		<img src="img/banfan.png" alt="" />	
 				         	</div>
 				    	    <div class="restaurant_1_1">
-				    	     	大娘水饺
+				    	     	如意美食
 				    	    </div>
 				    	    <div class="restaurant_1_2">
-				    	    	<span>评分：4.9分</span><span class="m">月售756单</span>
+				    	    	<span>评分：4.8分</span><span class="m">月售698单</span>
 				    	    </div>
 				     	    <div class="restaurant_1_3">
-					        	<span>起送:20元</span>
+					        	<span>起送:10元</span>
 					        	<span class="o">免费配送</span>
-					        	<span class="m"><img src="img/time.jpg" alt="" /><span class="v">22分钟</span></span>
+					        	<span class="m"><img src="img/time.jpg" alt="" /><span class="v">35分钟</span></span>
 					        </div>
 					        <div class="restaurant_1_4">
 					        	<hr />
@@ -137,21 +136,21 @@
 				    	    </div>
 				     	</div>
 			     	</a>
-			     	<a href="">
-				     	<div class="restaurant_1">
+			     	<a href="shop_four.html">
+				     	<div class="restaurant_1" onmouseover="change_1(this)" onmouseout="change_2(this)">
 				        	<div>
-				        		<img src="img/re1.jpg" alt="" />	
+				        		<img src="img/kaoya.png" alt="" />	
 				         	</div>
 				    	    <div class="restaurant_1_1">
-				    	     	大娘水饺
+				    	     	水西门烤鸭店
 				    	    </div>
 				    	    <div class="restaurant_1_2">
-				    	    	<span>评分：4.9分</span><span class="m">月售756单</span>
+				    	    	<span>评分：4.9分</span><span class="m">月售823单</span>
 				    	    </div>
 				     	    <div class="restaurant_1_3">
 					        	<span>起送:20元</span>
-					        	<span class="o">免费配送</span>
-					        	<span class="m"><img src="img/time.jpg" alt="" /><span class="v">22分钟</span></span>
+					        	<span class="o">配送费1元</span>
+					        	<span class="m"><img src="img/time.jpg" alt="" /><span class="v">30分钟</span></span>
 					        </div>
 					        <div class="restaurant_1_4">
 					        	<hr />
@@ -163,7 +162,6 @@
 			     	</a>
 		    	</div>	
 			</div>
-		</div>
-		
+		</div>	
 	</body>
 </html>

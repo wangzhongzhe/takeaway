@@ -3,9 +3,10 @@
 	height: 450px;
 	background-color: white;
 	position: relative;
-	left: 260px;
+	left: 340px;
 	top: 25px;
 	border: solid 2px gainsboro;
+	min-width:850px;
 }
 .search_1{
 	float: left;
@@ -72,4 +73,29 @@
 	height: 25px;
 	font-size: 12px;
 	border: solid 1px orange;
+}
+.pin{
+	width: 200px;
+	height: 300px;
+	position: absolute;
+	top: 135px;
+	left: 75px;
+	background-color: white;
+}
+.pin_1{
+	width: 200px;
+	height: 200px;
+}
+.pin_2{
+	font-size: 12px;
+	width: 200px;
+	height: 30px;
+}
+#pin_2_1{
+	width: 200px;
+	background-color: orange;
+}
+.pin_3{
+	padding-top: 10px;
+	font-size: 18px;
 }

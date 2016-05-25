@@ -8,16 +8,16 @@
             $(document).ready(function(){
                 $(".d2").mouseover(function(){
                     $(this).addClass("yellow");
-                    $("#d1").removeClass("yellow")
+                    $("#d1").removeClass("yellow");
                 });
                 $(".d2").mouseout(function(){
                     $(this).removeClass("yellow");
-                    $("#d1").addClass("yellow")
+                    $("#d1").addClass("yellow");
                 });
             });
 		</script>
-		<link rel="stylesheet" href="work.css" />
-		<link rel="stylesheet" href="information.css" />
+		<link rel="stylesheet" href="css/work.css" />
+		<link rel="stylesheet" href="css/information.css" />
 	</head>
 	<body>
 		<header>
@@ -35,9 +35,11 @@
 				<img src="img/logo.jpg" alt="" />
 			</div>
 			<div class="guide_2">
-				<span><a href="home.html">首页</a></span>
-				<span>|</span>
-				<span><a href="">我的外卖</a></span>
+				<div class="po">
+					<span><a href="home.html">首页</a></span>
+					<span>|</span>
+					<span><a href="">我的外卖</a></span>
+                </div>
 			</div>
 			<div class="guide_3">
 				<form action="">
@@ -61,7 +63,7 @@
 				<div class="search_1_3">
 					账号管理
 				</div>
-				<a href="seller_information.html">
+				<a href="customer_information.html">
 				    <div class="d2 search_1_2">
 			    		我的账号
 			    	</div>
