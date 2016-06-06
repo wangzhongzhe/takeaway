@@ -68,6 +68,7 @@ a:hover{
 	top: 5px;
 }
 .top_2{
+	display: none;
 	position:absolute;
 	width: 100px;
 	left: 1050px;
